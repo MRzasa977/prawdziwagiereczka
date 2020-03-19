@@ -21,11 +21,11 @@ public class EnemyPathing : MonoBehaviour
             var targetPosition = wayPoints[waypointIndex].transform.position;
             var movementThisFrame = moveSpeed * Time.deltaTime;
             this.transform.position = Vector3.MoveTowards(transform.position, targetPosition, movementThisFrame);
-            Debug.Log(targetPosition);
+            //Debug.Log(targetPosition);
             if (transform.position == targetPosition)
             {
                 waypointIndex++;
-                Debug.Log(waypointIndex);
+               // Debug.Log(waypointIndex);
             }
         }
         else

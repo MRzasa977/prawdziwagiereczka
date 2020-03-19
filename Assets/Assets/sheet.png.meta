@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -8238049234331069732
     second: PlayerShipSprite
+  - first:
+      213: 613435604629981061
+    second: sheet_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -124,7 +127,7 @@ TextureImporter:
         width: 22
         height: 94
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,7 +148,7 @@ TextureImporter:
         width: 101
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,6 +156,27 @@ TextureImporter:
       bones: []
       spriteID: 64367a5567b001a498d716ee3743c553
       internalID: -8238049234331069732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 388
+        width: 95
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c85a12e1fdd6d944b39496b031044e4
+      internalID: 613435604629981061
       vertices: []
       indices: 
       edges: []

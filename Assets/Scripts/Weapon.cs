@@ -8,16 +8,42 @@ public class Weapon : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public int ammo = 5;
+    public float shootingTime = 0.3f;
+    private float timeToReload;
 
-    // Update is called once per frame
+
+    void Start()
+    {
+        timeToReload = shootingTime;
+    }
+
+
     void Update()
     {
-        
-        if(Input.GetButtonDown("Fire1")&& ammo!=0)
+        if (ammo < 5)
         {
-            Shoot();
+            timeToReload -= Time.deltaTime;
+            //Debug.Log(Time.deltaTime);
+            if (timeToReload <0)
+            {
+                Reload();
+                Debug.Log("Reload");
+            }
         }
 
+        if (Input.GetButtonDown("Fire1")&& ammo!=0)
+        {
+            Shoot();
+           
+        }
+
+       /* if(ammo == 0 && timeToReload < 0)
+        {
+            Reload();
+            Debug.Log("Reload");
+        }
+*/
+        //StartCoroutine(Reload()); 
 
     }
 
@@ -25,5 +51,18 @@ public class Weapon : MonoBehaviour
     {
         Instantiate(bulletPrefab, firePoint.transform.position, firePoint.rotation);
         ammo--;
+    }
+
+    /*public IEnumerator Reload()
+    {
+        yield return new WaitForSeconds(3f);
+        ammo = 5;
+    }
+    */
+
+    public void Reload()
+    {
+        ammo = 5;
+        timeToReload = shootingTime;
     }
 }

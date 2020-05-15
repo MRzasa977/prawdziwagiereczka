@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 382686249940987476, guid: b073fc4307637f44b8ab10f5e260fdff,
     type: 3}
-  pathPrefab: {fileID: 2448948676604112736, guid: 9210fc7b36e3f4e4eaf65f92db337253,
+  pathPrefab: {fileID: 7256618239875729305, guid: 9210fc7b36e3f4e4eaf65f92db337253,
     type: 3}
   timeBetweenSpawns: 0.5
   spawnRandomFactor: 0.3
